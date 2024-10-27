@@ -1,0 +1,15 @@
+.App{
+  width: 100vw;
+  height: 100vh;
+  overflow-x:hidden ;
+}
+.navs{
+  width: 100px;
+  background-color: red;
+  transition: 1s;
+}
+.navs1{
+  width: 400px;
+  background-color:green;
+  transition: 1s;
+}
