@@ -21,6 +21,7 @@ body{
     padding: 20px;
     box-shadow: 0 8px 8px 0 gainsboro;
     transition: 0.7s;
+    cursor: pointer;
 }
 .sidebar1{
     width: 17%;
@@ -33,6 +34,7 @@ body{
     padding: 20px;
     transition: 0.7s;
     box-shadow: 0 8px 8px 0 gainsboro;
+    cursor: pointer;
 }
 .navimg{
     position: relative;
