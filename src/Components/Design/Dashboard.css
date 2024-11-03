@@ -32,7 +32,7 @@ body{
     align-items: flex-start;
     flex-direction: column;
     padding: 20px;
-    transition: 0.7s;
+    transition: 0.5s;
     box-shadow: 0 8px 8px 0 gainsboro;
     cursor: pointer;
 }
