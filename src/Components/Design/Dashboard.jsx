@@ -41,8 +41,6 @@ const Dashboard = () => {
   function changecolor(event) {
     console.log(event);
     setcolor(event)
-    
-    
   }
   function changetheme(event) {
     sethide(event)

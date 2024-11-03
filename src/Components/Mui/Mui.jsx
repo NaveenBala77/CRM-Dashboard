@@ -62,9 +62,9 @@ export default function CustomerTable() {
                 <TableCell sx={{ fontWeight: 'bold' }}>{row.country}</TableCell>
                 <TableCell>
                   <Button 
-                    variant="contained" 
-                    
-                    sx={{ 
+                    variant="contained"
+          
+                    sx={{
                       width: '80px', // Set a fixed width
                       height: '30px', // Set a fixed height
                       display: 'flex',
@@ -89,11 +89,23 @@ export default function CustomerTable() {
           Showing data {startEntry} to {endEntry} of {totalEntries.toLocaleString()} entries
         </Typography>
       <Pagination
-        count={Math.ceil(data.length / rowsPerPage)}
-        page={page}
-        onChange={handleChangePage}
+        count= {Math.ceil(data.length / rowsPerPage)}
+        page= {page}
+        onChange= {handleChangePage}
         
-        sx={{ display: 'flex', justifyContent: 'flex-end', }}
+        sx={{ display: 'flex', justifyContent: 'flex-end', 
+          '& .MuiPaginationItem-root': {
+            color: page === page ? '#5932EA' : 'inherit',
+            borderRadius: '10px', // Set border radius
+            width: '36px', // Set width for square shape
+            height: '36px', // Set height for square shape
+            margin: '0 2px',
+          },
+          '& .MuiPaginationItem-root.Mui-selected': {
+            backgroundColor: '#5932EA', // Add background color for selected page
+            color: 'white', // Change text color for better contrast
+          },
+        }}
       />
       </Box>
     </Box>
